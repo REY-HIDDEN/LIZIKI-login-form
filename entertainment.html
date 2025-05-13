@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Entertainment Preferences</title>
+<style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #222, #444);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f4c10f;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #555;
+  color: #fff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  background-color: #f4c10f;
+  color: #222;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0ae0c;
+}
+</style>
+</head>
+<body>
+  
+  <div class="form-container">
+    <h2>🎬 Share Your Entertainment Preferences</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="type">Favorite Type of Entertainment:</label>
+      <select id="type" name="type">
+        <option value="movies">Movies</option>
+        <option value="music">Music</option>
+        <option value="games">Video Games</option>
+        <option value="books">Books</option>
+        <option value="tv">TV Shows</option>
+        <option value="sports">Sports</option>
+      </select>
+
+      <label for="comments">Tell us why:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
